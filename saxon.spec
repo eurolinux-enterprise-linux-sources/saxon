@@ -31,7 +31,7 @@
 Summary:        Java XPath, XSLT 2.0 and XQuery implementation
 Name:           saxon
 Version:        9.3.0.4
-Release:        10%{?dist}
+Release:        11%{?dist}
 # net.sf.saxon.om.XMLChar is from ASL-licensed Xerces
 # net/sf/saxon/option/jdom/ is MPLv1.1
 # net/sf/saxon/serialize/codenorm/ is UCD
@@ -225,6 +225,9 @@ update-alternatives --install %{_javadir}/jaxp_transform_impl.jar \
 
 
 %changelog
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 9.3.0.4-11
+- Mass rebuild 2013-12-27
+
 * Wed Sep 25 2013 Mikolaj Izdebski <mizdebsk@redhat.com> - 9.3.0.4-10
 - Disable support for XOM
 
